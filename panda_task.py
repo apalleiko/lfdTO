@@ -13,12 +13,12 @@ import numpy as np
 from pydrake.all import *
 from TO import IterativeLinearQuadraticRegulator
 
-meshcat_visualisation = True
+meshcat_visualisation = False
 
 # Choose what to do
 simulate = False   # Run a simple simulation with fixed input
-optimize = True    # Find an optimal trajectory using ilqr
-playback = True    # Visualize the optimal trajectory by playing it back.
+optimize = False   # Find an optimal trajectory using ilqr
+playback = False   # Visualize the optimal trajectory by playing it back.
 
 scenario = "forward"   # "lift", "forward", or "side"
 save_file = "panda_" + scenario + ".npz"
